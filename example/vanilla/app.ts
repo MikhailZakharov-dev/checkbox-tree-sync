@@ -76,9 +76,9 @@ export default createApp;
 
 const attachEventListeners = (checkboxes: CheckboxModel[]) => {
   checkboxes.forEach((checkbox) => {
-    const checkbox = document.querySelector(`#checkbox-${checkbox.id}`);
-    if (checkbox) {
-      checkbox.addEventListener("click", () => checkbox.getToggleHandler()());
+    const element = document.querySelector(`#checkbox-${checkbox.id}`);
+    if (element) {
+      element.addEventListener("click", () => checkbox.getToggleHandler()());
     }
     if (checkbox.subCheckboxes) {
       attachEventListeners(checkbox.subCheckboxes);
