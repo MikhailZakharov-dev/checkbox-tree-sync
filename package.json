@@ -1,0 +1,45 @@
+{
+  "name": "checkbox-tree-sync",
+  "version": "1.0.0",
+  "description": "A lightweight library for checkbox tree synchronization",
+  "license": "ISC",
+  "homepage": "https://github.com/MikhailZakharov-dev/checkbox-tree-sync.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikhailZakharov-dev/checkbox-tree-sync.git"
+  },
+  "keywords": [
+    "tree",
+    "checkbox",
+    "hierarchical",
+    "selection",
+    "parent-child",
+    "data synchronization"
+  ],
+  "main": "./dist/checkbox-tree-sync.umd.cjs",
+  "module": "./dist/checkbox-tree-sync.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/checkbox-tree-sync.js",
+      "require": "./dist/checkbox-tree-sync.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc && rimraf ./dist && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.6.3",
+    "rimraf": "^5.0.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
