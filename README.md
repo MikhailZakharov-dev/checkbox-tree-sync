@@ -63,6 +63,7 @@ const { checkBoxTreeSync } = useCheckboxTreeSync({
 ### Working example
 
 https://codesandbox.io/s/new-sky-rh72xj - vanilla css & react
+https://codesandbox.io/s/focused-water-fxkcgm - material ui
 
 ## TypeScript Support
 
