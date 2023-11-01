@@ -65,6 +65,17 @@ const { checkBoxTreeSync } = useCheckboxTreeSync({
 - https://codesandbox.io/s/new-sky-rh72xj - vanilla css & react
 - https://codesandbox.io/s/focused-water-fxkcgm - material ui
 
+## Interface
+
+| Prop                | Type                                      | Description                                                | Default Value   |
+|---------------------|-------------------------------------------|------------------------------------------------------------|------------------|
+| `data`              | `T[]`                                     | An array of data for building the checkbox tree.          | -                |
+| `state`             | `TState`                                  | Optional default state of the checkboxes.                 | Empty object     |
+| `getSubCheckboxes`  | `(item: T) => T[] \| undefined`           | A function returning child checkboxes for an item.        | -                |
+| `getCheckboxId`     | `(item: T) => string`                     | A function generating a unique checkbox ID from an item.  | -                |
+| `onStateChange`     | `(state: TState) => void`                 | An optional callback function when checkbox state changes.| -                |
+| `getCheckboxVariantModel` | `CheckboxVariantModelCreator<T>`    | An optional function for creating a checkbox variant model. | -                |
+
 ## TypeScript Support
 
 The CheckboxTreeSync library fully supports TypeScript, providing type definitions for its core components. You can take full advantage of TypeScript's static type checking and code intelligence when using this library.
